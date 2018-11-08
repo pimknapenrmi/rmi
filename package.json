@@ -1,0 +1,28 @@
+{
+  "name": "dashboardwebhook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions:dashboardwebhook",
+    "shell": "firebase functions:shell",
+    "logs": "firebase functions:log"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "actions-on-google": "^2.2.0",
+    "firebase-admin": "^5.13.1",
+    "firebase-functions": "^2.0.2",
+    "dialogflow": "^0.6.0",
+    "dialogflow-fulfillment": "^0.5.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "ngrok": "^3.0.1"
+  }
+}
