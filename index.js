@@ -2,7 +2,7 @@
  
 const express = require('express');
 const bodyParser = require('body-parser');
-const app = express().use(bodyParser.json()); // creates http server
+//const app = express().use(bodyParser.json()); // creates http server
 //const token = ''; // type here your verification token
 const {dialogflow} = require ('actions-on-google');
 
@@ -16,11 +16,9 @@ const QUOTE_TYPE_ENTITY = 'antwoordtype';
 // app.get('/', (req, res) => {
 // 	 res.write('<p>hi there!</p>');
 // });
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
+
  
-// app.post('/', (req, res) => { 
+//app.post('/', (req, res) => { 
 	console.log("post");
     appfulfillment.intent(WELCOME_INTENT, (conv) => {
 	    conv.ask("welkom bij het dashboard!");
@@ -39,6 +37,6 @@ app.get('/', function(req, res) {
 	         conv.ask("dit is de overige statement");
 	     }
 	});
-// });
+//});
 
-// express().use(bodyParser.json(), appfulfillment).listen(3000);
+express().use(bodyParser.json(), appfulfillment).listen(3000);
