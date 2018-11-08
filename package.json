@@ -10,10 +10,6 @@
     "shell": "firebase functions:shell",
     "logs": "firebase functions:log"
   },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
   "engines": {
     "node": "8.x"
   },
@@ -31,5 +27,14 @@
   },
   "devDependencies": {
     "ngrok": "^3.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "example",
+    "heroku",
+    "express"
+  ]
 }
