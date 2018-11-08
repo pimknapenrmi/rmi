@@ -1,7 +1,7 @@
 'use strict';
  
-// const express = require('express');
-// const bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 const app = express().use(bodyParser.json()); // creates http server
 //const token = ''; // type here your verification token
 const {dialogflow} = require ('actions-on-google');
