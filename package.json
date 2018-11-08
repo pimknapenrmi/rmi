@@ -1,7 +1,7 @@
 {
   "name": "dashboardwebhook",
   "version": "1.0.0",
-  "description": "",
+  "description": "De descrptie van de functionaliteit.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,8 +10,15 @@
     "shell": "firebase functions:shell",
     "logs": "firebase functions:log"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "engines": {
+    "node": "8.x"
+  },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
